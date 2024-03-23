@@ -1,0 +1,42 @@
+/* Select the <h1> element in the header and style it */
+header h1 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Select the <ul> within the navigation and style its list items */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Select all links within the navigation and style them */
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 10px;
+}
+
+/* Select the first <section> element within the <main> and style it */
+main section:first-child {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Select the <p> with the class "important" within the second <section> and style it */
+main section:nth-child(2) .important {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Style the footer text */
+footer p {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}

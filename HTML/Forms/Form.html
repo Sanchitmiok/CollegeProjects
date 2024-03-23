@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <label for="Username" >Username:</label>
+        <input type="text" name="Username" placeholder="write here" pattern="[a-zA-Z0-9]+"  autofocus><br><br>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" placeholder="xxxxxxxxx" ><br><br>
+
+        <!--Radio button for sex-->
+        <label>Gender:</label>
+        <input type="radio" id="male" value="male" name="Gender">
+        <label for="male">male</label>
+        <input type="radio" id="female" value="female" name="Gender">
+        <label for="female">female</label>
+        <input type="radio" id="others" value="others" name="Gender">
+        <label for="others">others</label>
+        <br><br>
+        <label>Favorites color:</label>
+        <select>
+            <option>blue</option>
+            <option>green</option>
+            <option>red</option>
+            <option>yellow</option>
+            <option>orange</option>
+            
+        </select>
+        <br><br>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" required>
+        <label for="subscribe">All cheked</label>
+        
+
+        <!--feedback --><br><br>
+        <textarea name="comment" rows="4" cols="50">
+            
+      </textarea>
+      <br><br>
+        <input type="reset" value="reset">
+      <br><br>
+        <!--Submit button-->
+        <input type="submit" value="submit">
+
+
+        
+
+    </form>
+</body>
+
+</html>

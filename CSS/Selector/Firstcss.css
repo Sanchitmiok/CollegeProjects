@@ -1,0 +1,48 @@
+*{
+    font-style: oblique;
+    font-size: x-large;
+}
+
+span{
+    background-color: aqua;
+}
+article{
+    color: rgb(25, 120, 120);
+}
+ul{
+    background-color: rgb(118, 77, 14);
+}
+li{
+    color: rgb(255, 0, 0);
+}
+
+/* class */
+.world{
+    color: rgb(218, 19, 19);
+}
+.word{
+    color: blue;
+}
+.about{
+    background-color: aquamarine;
+}
+
+/* id */
+#head{
+    background-color: black;
+    color: brown;
+}
+#first{
+    color: blueviolet;
+}
+#second{
+    color: rgb(255, 242, 0);
+}
+#function{
+    color: rgb(255, 0, 255);
+}
+
+/* group selector */
+h1 , h3 {
+    text-decoration: underline;
+}

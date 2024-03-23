@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+
+        .list1 {
+            /* border: 2px solid; */
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 100px;
+            margin-top: 45px;
+            gap: 35px;
+
+        }
+
+        .list2 {
+            /* border: 2px solid; */
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 205px;
+            margin-top: 45px;
+            gap: 35px;
+
+        }
+
+        .list2 li {
+            padding: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .heading {
+            position: relative;
+            padding-top: 120px;
+            left: 20vw;
+
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        .heading img {
+            width: 100px;
+            height: 35px;
+            align-self: center;
+        }
+
+        .intro {
+            position: relative;
+            font-size: 25px;
+            align-items: center;
+            padding-top: 25px;
+            left: 22vw;
+            width: 730px;
+            /* border: 2px solid; */
+
+        }
+
+        .button1 {
+            padding-top: 45px;
+            padding-bottom: 45px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #00BFFF;
+            font-size: 15px;
+            color: white;
+            border:none;
+            border-radius: 10px;
+        }
+        .grid{
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .box {
+            height: fit-content;
+            width: fit-content;
+            background-color: rgb(247, 252, 252);
+            border-radius: 10px;
+
+        }
+
+        #headin1 {
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+            align-self: center;
+            padding-bottom: 35px;
+        }
+        #headin2 {
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+            align-self: center;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="list1">
+                <img src="Dark-logo.png" alt="image" width="135.675px" height="43.200px">
+            </ul>
+            <ul class="list2">
+                <li><a href="#jna">Products</a></li>
+                <li><a href="#jna">Pricing</a></li>
+                <li><a href="#jna">Resource</a></li>
+                <li><a href="#jna">About us</a></li>
+                <i class='fas fa-book' style='font-size:25px;color:rgb(0, 0, 0)'></i>
+            </ul>
+            <div class="heading">
+
+                <h1 class="h1" style="color: rgb(92, 92, 91); font-size: 45.5px;">Download <strong
+                        style="color: black;">UltraEdit</strong> for
+                    Windows </h1>
+                <img src="Reviews.png" style="" alt="">
+
+            </div>
+        </nav>
+        <div>
+            <p class="intro">Download and try UltraEdit before you buy it! This download includes the full Windows
+                version of the text editor.</p>
+        </div>
+        <p class="button1"><button>DOWNLOAD MAC OR LINUX VERSION</button></p>
+    </header>
+    <main>
+        <div class="intro">Download UltraEdit <span style="font-size: small;">v2023.1(released 08/16/2023) | Hotfix</span></div>
+        <div class="grid">
+            <div class="box">
+                <h2 id="headin1">English</h2>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">Deutsch</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">German</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">Italiano</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">Italian</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            
+            <div class="box">
+                <h2 id="headin2">Español</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">Spanish</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">français</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">French</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">Português brasileiro</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">Brazilian Portuguese</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">日本</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">Japanese</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">한국어</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">Korean</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">中国</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">Chinese</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <h2 id="headin2">中國</h2>
+                <p style="display: flex; justify-content: center; padding-bottom: 15px;">Traditional Chinese</p>
+                <div class="button2">
+                    <button><a href="ue_english.exe">Download 32bit</a></button>
+                    <button style="background-color: lightgreen;"><a href="ue_english_64.exe" >Download 64bit</a></button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

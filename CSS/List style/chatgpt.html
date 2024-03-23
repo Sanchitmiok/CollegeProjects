@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul.inside-list {
+            list-style-type: "✅";
+            /* Bullet point for unordered list */
+            list-style-position: inside;
+        }
+
+        ul.outside-list {
+            list-style-type: "✅";
+            /* Bullet point for unordered list */
+            list-style-position: outside;
+        }
+
+        li {
+            margin: 5px 0;
+            /* Add some spacing for clarity */
+            border: 2px solid black;
+        }
+
+        .inside-marker {
+            color: red;
+            /* Color for inside list markers */
+        }
+
+        .outside-marker {
+            color: blue;
+            /* Color for outside list markers */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Inside List</h2>
+    <ul class="inside-list">
+        <li class="inside-marker">List item 1</li>
+        <li class="inside-marker">List item 2</li>
+        <li class="inside-marker">List item 3</li>
+    </ul>
+
+    <h2>Outside List</h2>
+    <ul class="outside-list">
+        <li class="outside-marker">List item 1</li>
+        <li class="outside-marker">List item 2</li>
+        <li class="outside-marker">List item 3</li>
+    </ul>
+</body>
+
+</html>

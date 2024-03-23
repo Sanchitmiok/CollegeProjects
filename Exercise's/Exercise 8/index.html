@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: harryY 2s ease-out infinite alternate , harryX 2s linear infinite alternate;
+
+
+        }
+
+        @keyframes harryX{
+           from{left:0}
+           to{left:100%}
+        }
+        @keyframes harryY{
+           from{bottom:0}
+           to{bottom:100%}
+        }
+
+        @keyframes myFirst {
+            0% {
+                translate: 0px 0px;
+            }
+
+            25% {
+                translate: 100px -100px;
+            }
+
+            50% {
+                translate: 200px 0px;
+            }
+
+            76% {
+                translate: 300px -100px;
+            }
+
+            98% {
+                translate: 400px 0px;
+            }
+
+        }
+
+        @keyframes mymotion {
+
+            /* 1199.350  */
+            /* 299.513 */
+            0% {
+                left: 0px;
+                top: 299.513px;
+            }
+
+            25% {
+                left: 299.83px;
+                top: 149.7565px;
+            }
+
+            50% {
+                left: 599.675px;
+                top: 299.513px;
+            }
+
+            75% {
+                left: 899.5125px;
+                top: 149.7565px;
+            }
+
+            100% {
+                left: 1199.350px;
+                top: 299.513px;
+            }
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 1320.35px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+        </div>
+    </div>
+    <!-- 
+   
+     -->
+</body>
+
+</html>
