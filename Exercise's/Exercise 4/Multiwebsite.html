@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        :root{
+            --colorbg:GoldenRod;
+            --colorli1:#00FFFF;
+            --colorli2:#F0FFFF;
+            --colorli3:BlueViolet;
+            --colorli4:DarkBlue;
+            --colorli5:DarkOrchid;
+        }
+        body{
+            background-color:var(--colorli1);
+        }
+        .list{
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        li {
+            margin: 15px;
+        }
+        li:nth-child(1){
+            color:var(--colorli1) ;
+        }
+        li:nth-child(2){
+            color: var(--colorli2);
+        }
+        li:nth-child(3){
+            color: var(--colorli3);
+        }
+        li:nth-child(4){
+            color: var(--colorli4);
+        }
+        li:nth-child(5){
+            color: var(--colorli5);
+        }
+        nav{
+            border: 1px solid black;
+            background-color: var(--colorbg);
+            text-align: center;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            position: relative;
+            bottom: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul class="list">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contacts</li>
+                <li>Resources</li>
+                <li>Team support</li>
+            </ul>
+            <button>Click</button>
+        </nav>
+       
+    </header>
+    
+</body>
+</html>

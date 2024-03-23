@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color using DOM</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            border: 1px solid ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+    </div>
+
+</body>
+    <script>
+        let box = document.body.getElementsByClassName("box")
+        function getrandom(){
+            let one = Math.ceil(0 + Math.random()*255)
+            let two = Math.ceil(0 + Math.random()*255)
+            let three = Math.ceil(0 + Math.random()*255)
+            return `rgb(${one},  ${two}, ${three})`
+        }
+    //  box[0].style.backgroundColor =getrandom()
+    //  box[1].style.backgroundColor ==getrandom()
+    //  box[2].style.backgroundColor  =getrandom()
+    //  box[3].style.backgroundColor = getrandom()
+    //  box[4].style.backgroundColor ==getrandom()
+    //  box[0].style.color ==getrandom()
+    //  box[1].style.color  =getrandom()
+    //  box[2].style.color =getrandom()
+    //  box[3].style.color =getrandom()
+    //  box[4].style.color =getrandom()
+    Array.from(box).forEach(e=>{
+        e.style.backgroundColor = getrandom()
+        e.color = getrandom()
+    })
+    </script>
+
+</html>
